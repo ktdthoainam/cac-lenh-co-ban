@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!--
+      Need a visual blank slate?
+      Remove all code in `styles.css`!
+    -->
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+    <style>
+      table,
+      tr,
+      td,
+      th {
+        border: 1px solid;
+      }
+    </style>
+  </head>
+  <body>
+    <!--  the tieu de h1 -> h6 -->
+    <h1>Web Media</h1>
+    <ul style="list-style: none">
+      <li>Home</li>
+      <li>Post</li>
+      <li><a href="video"> Video &lt;</a></li>
+    </ul>
+    <h2>Danh sach mon an</h2>
+    <table>
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Price</th>
+      </tr>
+
+      <tr>
+        <td>1</td>
+        <td colspan="2">Mi goi</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Mi goi</td>
+        <td>3000</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td rowspan="2">Mi goi</td>
+        <td>3000</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>3000</td>
+      </tr>
+    </table>
+
+    <form action="https://codedym-account.com/save-data" name="createForm">
+      <p>Name</p>
+      <input name="user_name" value="" type="text" />
+      <input name="user_pass" value="" type="password" />
+      <input name="submit" value="Create user" type="submit" />
+      <input name="reset" value="Clear data" type="reset" />
+
+      <p>
+        <input type="radio" name="gender" value="Nam" /> Nam
+        <input type="radio" name="gender" value="Nu" /> Nu
+      </p>
+
+      <p>
+        So thich
+        <input type="checkbox" name="hobby" value="Da Bong" /> Da Bong
+        <input type="checkbox" name="hobby" value="Nghe Nhac" /> Nghe Nhac
+      </p>
+      <p>
+        <input type="checkbox" name="check" value="1" /> Toi dong y voi cac dieu
+        kien va chinh sach.
+      </p>
+
+      <p>Gioi tinh</p>
+      <select>
+        <option value="Name">Nam</option>
+        <option value="Nu">Nu</option>
+      </select>
+
+      <p>Thong tin them</p>
+
+      <textarea rows="4" cols="40"></textarea>
+    </form>
+
+    <input type="button" name="check" value="Buy Now" />
+    <button>Buy Now</button>
+
+    <h3>Tin Tuc Nong &lt;</h3>
+
+    <p>Ngay 05/04/2023</p>
+    <a href="https://www.24h.com.vn/">Xem chi tiet </a>
+    <img
+      src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/7264/201736/dong-ho-nam-citizen-bi1052-85p-vang-600x600.jpg"
+      alt="hinh anh"
+      style="height: 100px"
+    />
+    <ol>
+      <li>Mau xanh &lt;</li>
+      <li>Mau do</li>
+      <li>Mau den</li>
+    </ol>
+    <audio controls>
+      <source
+        src="https://www.dropbox.com/s/9vz1i8y8dw3hjk9/horse.mp3?dl=1"
+        type="audio/mpeg"
+      />
+      Your browser does not support the audio element.
+    </audio>
+
+    <video width="200" height="200" controls>
+      <source
+        src="https://www.dropbox.com/s/3z7ruaws6lb092t/movie.mp4?dl=1"
+        type="video/mp4"
+      />
+      Your browser does not support the video tag.
+    </video>
+  </body>
+</html>
